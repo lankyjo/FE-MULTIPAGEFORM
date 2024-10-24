@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div class="steps-section sidebar">
+                <div class="step step-1">
+                    <div class="step-number"><h3>1</h3></div>
+                    <div class="step-content">
+                        <p>STEP 1</p>
+                        <h3>YOUR INFO</h3>
+                    </div>
+                </div>
+                <div class="step step-2">
+                    <div class="step-number"><h3>2</h3></div>
+                    <div class="step-content">
+                        <p>STEP 2</p>
+                        <h3>SELECT PLAN</h3>
+                    </div>
+                </div>
+                <div class="step step-3">
+                    <div class="step-number"><h3>3</h3></div>
+                    <div class="step-content">
+                        <p>STEP 3</p>
+                        <h3>ADD-ONS</h3>
+                    </div>
+                </div>
+                <div class="step step-4">
+                    <div class="step-number"><h3>4</h3></div>
+                    <div class="step-content">
+                        <p>STEP 4</p>
+                        <h3>SUMMARY</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <form action="/">
+                    <!-- first form -->
+                    <div class="form-input first-card active">
+                        <div class="header">
+                            <h1 class="title">Personal info</h1>
+                            <p>Please provide your name, email address, and phone number.</p>
+                        </div>
+                        <!-- FULL NAME -->
+                        <div class="input">
+                            <label for="full-name"><div>Name</div> <div class="warning">This field is required</div></label>
+                            <input type="text" name="full-name" id="full-name" placeholder="e.g. Stephen King" required>
+                        </div>
+                        <!-- EMAIL -->
+                        <div class="input">
+                            <label for="e-mail"><div>Email Address</div> <div class="warning">This field is required</div></label>
+                            <input type="email" name="e-mail" id="e-mail" placeholder="e.g. stephenking@email.com" required>
+                        </div>
+                        <!-- PHONE NUMBER -->
+                        <div class="input">
+                            <label for="phone-no"><div>Phone Number</div> <div class="warning">This field is required</div></label>
+                            <input type="tel" name="phone number" id="phone-no" placeholder="e.g. +1 234 567 890" required>
+                        </div>
+                        <div class="btn single-btn">
+                            <button class="btn-1">Next step</button>
+                        </div>
+                    </div>
+                    <!-- second form -->
+                    <div class="form-input second-card">
+                        <div class="header">
+                            <h1 class="title">Select your plan</h1>
+                            <p>You have the option of monthly or yearly billing.</p>
+                        </div>
+                        <input type="checkbox" id="toggler">
+                        <div class="card-container">
+                            <div class="card selected">
+                                <div class="svg">
+                                    <img src="/assets/images/icon-arcade.svg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="plan">Arcade</h3>
+                                    <h4 class="price">$<span class="yearly-price">90/yr</span><span class="monthly-price">9/mo</span></h4>
+                                    <h5 class="promo">2 months free</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="svg">
+                                    <img src="/assets/images/icon-advanced.svg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="plan">Advanced</h3>
+                                    <h4 class="price">$<span class="yearly-price">120/yr</span><span class="monthly-price">12/mo</span></h4>
+                                    <h5 class="promo">2 months free</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="svg">
+                                    <img src="/assets/images/icon-pro.svg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="plan">Pro</h3>
+                                    <h4 class="price">$<span class="yearly-price">150/yr</span><span class="monthly-price">15/mo</span></h4>
+                                    <h5 class="promo">2 months free</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle-container">
+                            <div class="monthly">Monthly</div>
+                            <label for="toggler" class="toggle-btn"></label>
+                            <div class="yearly">Yearly</div>
+                        </div>
+                        <div class="btn twin-btn">
+                            <button class="prev btn-2">Go back</button>
+                            <button class="next btn-2">Next step</button>
+                        </div>
+                    </div>
+                    <!-- third-form -->
+                    <div class="form-input third-card">
+                        <div class="header">
+                            <h1 class="title">Pick add-ons</h1>
+                            <p>Add-ons help enhance gaming experience.</p>
+                        </div>
+                        <div class="addon-services">
+                            <div class="service service-1">
+                                <div class="service-content">
+                                    <div class="picker"></div>
+                                    <div class="service-content-text">
+                                        <h3>Online services</h3>
+                                        <p>Access to multiplayer games</p>
+                                    </div>
+                                </div>
+                                <div class="service-price">
+                                    <p>+$1/mo</p>
+                                </div>
+                            </div>
+                            <div class="service service-2">
+                                <div class="service-content">
+                                    <div class="picker"></div>
+                                    <div class="service-content-text">
+                                        <h3>Larger storage</h3>
+                                        <p>Extra 1TB of cloud save</p>
+                                    </div>
+                                </div>
+                                <div class="service-price">
+                                    <p>+$2/mo</p>
+                                </div>
+                            </div>
+                            <div class="service service-3">
+                                <div class="service-content">
+                                    <div class="picker"></div>
+                                    <div class="service-content-text">
+                                        <h3>Customizable profile</h3>
+                                        <p>Custom theme on your profile</p>
+                                    </div>
+                                </div>
+                                <div class="service-price">
+                                    <p>+$2/mo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn twin-btn">
+                            <button class="prev btn-3">Go back</button>
+                            <button class="next btn-3">Next step</button>
+                        </div>
+                    </div>
+                    <!-- fourth form -->
+                    <div class="form-input fourth-card">
+                        <div class="header">
+                            <h1 class="title">Finishing up</h1>
+                            <p>Double-check everything looks OK before confirming.</p>
+                        </div>
+                        <div class="summary-container">
+                            <div class="subscription-summary">
+                                <div class="subscription-summary-content">
+                                    <h3><span class="summary-plan">Arcade</span> <span class="duration">(Monthly)</span></h3>
+                                    <p class="change-btn">Change</p>
+                                </div>
+                                <p class="summary-service-price">+$9/mo</p>
+                            </div>
+                            <div class="online-service addon-service">
+                                <p>Online service</p>
+                                <p class="summary-price">+$1/mo</p>
+                            </div>
+                            <div class="larger-storage addon-service">
+                                <p>Larger storage</p>
+                                <p class="summary-price">+$2/mo</p>
+                            </div>
+                            <div class="customizable-profile addon-service">
+                                <p>Customizable profile</p>
+                                <p class="summary-price">+$2/mo</p>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <p class="total-word">Total (per month)</p>
+                            <p class="total-price">+$14/mo</p>
+                        </div>
+                        <div class="btn twin-btn">
+                            <button class="prev btn-3">Go back</button>
+                            <button type="submit" id="submit" class="next btn-3">Confirm</button>
+                        </div>
+                    </div>
+
+                    <div class="form-input last-card">
+                        <div class="thank-you-card">
+                            <img src="/assets/images/icon-thank-you.svg" alt="">
+                            <h1 class="thank-you-header">Thank you!</h1>
+                            <p class="text-you-text">
+                                Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, feel free to email us at support@loremgaming.com.
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="/main.js"></script>
+</body>
+</html>
